@@ -1,6 +1,6 @@
 import Controller from "../controller/controller.js";
 
-import Accordion from "./elements/accordion.js";
+import Accordion from "./elements/Accordion.js";
 import Payment from "./elements/Payment.js";
 
 import Summary from "./elements/Summary.js";
