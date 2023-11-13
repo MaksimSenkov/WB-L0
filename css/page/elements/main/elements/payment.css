@@ -1,0 +1,54 @@
+.payment {
+    background-color: #fff;
+    border-radius: 16px;
+
+    padding: 16px 24px 24px;
+}
+
+.payment__heading-wrapper {
+    display: flex;
+    margin-bottom: 16px;
+}
+.payment__heading {
+    flex-grow: 1;
+}
+
+.payment__change-method-button {
+    background-color: transparent;
+}
+
+.payment__card-data-wrapper {
+}
+
+.payment__payment-hint_hidden {
+    display: none;
+}
+.card-data {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 8px;
+}
+.card-data .card {
+    margin-right: 8px;
+}
+
+.card-data__number {
+    margin-right: 12px;
+}
+
+@media (320px <= width) and (width <= 1000px) {
+    .payment {
+        padding: 16px 16px 24px;
+    }
+    .payment__heading.h2 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 140% */
+        letter-spacing: -0.2px;
+    }
+    .payment__heading-wrapper {
+        margin-bottom: 8px;
+    }
+}

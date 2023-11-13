@@ -1,0 +1,24 @@
+.wrapper {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    position: relative;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-color-violet);
+}
+
+.footer {
+    height: 64px;
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.body__overflow_hidden {
+    overflow: hidden;
+}

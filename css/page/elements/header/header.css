@@ -1,0 +1,242 @@
+.header {
+    height: 88px;
+
+    padding: 16px 24px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header__burger-button {
+    height: 48px;
+    width: 48px;
+
+    margin-right: 16px;
+
+    padding: 11px 9px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    background-color: transparent;
+
+    transition: border-color 0.2s ease;
+}
+.header__burger-button.burger_mobile {
+    display: none;
+}
+
+.burger-button__icon {
+    width: 28px;
+    height: 24px;
+
+    fill: #fff;
+}
+.header__burger-button:hover {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.header__label {
+    width: 106px;
+    height: 48px;
+
+    transform: translateY(-5px);
+
+    margin-right: 32px;
+
+    font-size: 28px;
+    line-height: 24px;
+    letter-spacing: 0.56px;
+    font-variant: all-small-caps;
+    font-weight: 600;
+    color: white;
+}
+
+.header__search-mobile {
+    display: none;
+}
+
+.header__input-wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 32px;
+}
+
+.input-wrapper__icon {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.header__search-bar {
+    height: 48px;
+    width: 100%;
+
+    padding: 10px 20px 14px;
+
+    border-radius: 36px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+
+    transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.header__search-bar:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.header__search-bar:focus,
+.header__search-bar:focus:hover {
+    cursor: text;
+    color: #242424;
+    background-color: #fff;
+}
+.header__search-bar::placeholder {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header__profile {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-right: 40px;
+    padding: 1px 0 4px;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.profile-link__icon {
+    height: 28px;
+    width: 28px;
+}
+.header__basket {
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1px 0 4px;
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.basket-link__icon {
+    height: 28px;
+    width: 28px;
+
+    transform: translateX(-4px);
+}
+
+@media (320px <= width) and (width <= 1000px) {
+    .header {
+        height: 56px;
+
+        padding: 14px 13px;
+    }
+
+    .header .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        gap: 16px;
+    }
+
+    .header__burger-button {
+        height: 28px;
+        width: 28px;
+
+        border: unset;
+
+        padding: unset;
+        margin-right: unset;
+    }
+
+    .burger-button__icon {
+        display: none;
+        width: 28px;
+        height: 24px;
+
+        fill: #fff;
+    }
+
+    .header__burger-button.burger_mobile {
+        display: inline-block;
+    }
+    .header__label {
+        flex-grow: 1;
+        height: 24px;
+
+        margin-right: unset;
+        /* transform: unset; */
+        text-align: center;
+
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 92.308% */
+        font-variant: all-small-caps;
+        letter-spacing: 0.52px;
+
+        white-space: nowrap;
+    }
+
+    .header__search-mobile {
+        display: block;
+        fill-opacity: 1;
+    }
+
+    .header__input-wrapper {
+        display: none;
+    }
+
+    .header__input-wrapper {
+        position: relative;
+        flex-grow: unset;
+        margin-right: unset;
+    }
+    .input-wrapper__icon {
+        display: none;
+    }
+
+    .header__search-bar {
+        display: none;
+    }
+
+    .header__profile {
+        display: none;
+    }
+
+    .header__basket {
+        display: none;
+    }
+}

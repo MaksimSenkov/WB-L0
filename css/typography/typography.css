@@ -1,0 +1,83 @@
+h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 128.571% */
+    letter-spacing: -0.28px;
+}
+
+.h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.24px;
+}
+.h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+
+.h4 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.h5 {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.caption {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.caption_fw700 {
+    font-weight: 700;
+}
+
+.font-color_accent {
+    color: var(--accent);
+}
+
+.font-color_gray {
+    color: var(--gray);
+}
+
+.font-color_light-gray {
+    color: var(--light-gray);
+}
+
+.text {
+    color: var(--font-default-color);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.text_fw600 {
+    font-weight: 600;
+}
+
+.text_caption {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.text_budge {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 18px;
+}

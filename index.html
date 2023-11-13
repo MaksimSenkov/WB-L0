@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/css/normalize.css" />
+        <link rel="stylesheet" href="/css/bundle.css" />
+        <title>Корзина</title>
+    </head>
+    <body id="root" class="body">
+        <div class="wrapper text">
+            <header class="header">
+                <div class="container">
+                    <button class="header__burger-button burger-button">
+                        <svg class="burger-button__icon">
+                            <use href="/assets/icons.svg#burgerIcon"></use>
+                        </svg>
+                        <div class="header__burger-button burger_mobile"></div>
+                    </button>
+
+                    <a href="#" class="header__label">Товары и&nbsp;точка</a>
+
+                    <div class="search header__search-mobile"></div>
+
+                    <div class="header__input-wrapper input-wrapper">
+                        <input type="search" class="header__search-bar" placeholder="Я ищу&hellip;" />
+                        <div class="search input-wrapper__icon"></div>
+                    </div>
+
+                    <a href="#" class="header__profile profile-link">
+                        <svg class="profile-link__icon">
+                            <use href="/assets/icons.svg#personIcon"></use>
+                        </svg>
+                        <span>Профиль</span>
+                    </a>
+
+                    <a href="#" class="header__basket basket-link">
+                        <svg class="basket-link__icon">
+                            <use href="/assets/icons.svg#basketIcon"></use>
+                        </svg>
+                        <span>Корзина</span>
+                    </a>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="container">
+                    <section class="basket">
+                        <h1 class="basket__heading">Корзина</h1>
+
+                        <ul id="accordion" class="basket__accordion accordion">
+                            <li class="accordion__item accordion-item">
+                                <div class="accordion-item__controls">
+                                    <label
+                                        class="checkbox accordion-item__select-all accordion-item__select-all_shown"
+                                        data-selectAll
+                                    >
+                                        <input
+                                            type="checkbox"
+                                            class="checkbox__input"
+                                            data-checkBoxType="selectAll"
+                                        />Выбрать все
+                                        <span class="checkbox__icon"></span>
+                                    </label>
+
+                                    <div class="accordion-item__summary" data-summary></div>
+
+                                    <button class="accordion-item__show-button show-button" data-button="inBasketItems">
+                                        <svg class="show-button__icon">
+                                            <use href="/assets/icons.svg#arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <ul id="accordionItemList" class="accordion-item__list item-list"></ul>
+                            </li>
+                            <li class="accordion__item accordion-item">
+                                <div class="accordion-item__controls">
+                                    <span class="accordion-item__summary accordion-item__summary_shown item-summary"
+                                        >Отсутствуют · 3 товара</span
+                                    >
+                                    <button class="accordion-item__show-button show-button" data-button="missingItems">
+                                        <svg class="show-button__icon">
+                                            <use href="/assets/icons.svg#arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <ul class="accordion-item__list item-list font-color_gray">
+                                    <li class="item-list__item item">
+                                        <picture>
+                                            <source
+                                                srcset="
+                                                    /assets/images/img_1/img_1@1x.avif 1x,
+                                                    /assets/images/img_1/img_1@2x.avif 2x
+                                                "
+                                                type="image/avif"
+                                            />
+                                            <source
+                                                srcset="
+                                                    /assets/images/img_1/img_1@1x.webp 1x,
+                                                    /assets/images/img_1/img_1@2x.webp 2x
+                                                "
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                height="96px"
+                                                width="72px"
+                                                loading="lazy"
+                                                class="item__img item__img_missing"
+                                                src="/assets/images/img_1/img_1@1x.jpg"
+                                                srcset="/assets/images/img_1/img_1@2x.jpg 2x"
+                                                alt="Мужчина и женщина в футболках UZcotton"
+                                            />
+                                        </picture>
+
+                                        <div class="item__description">
+                                            <span class="item__label">Футболка UZcotton мужская</span>
+
+                                            <dl class="item__parameters-list parameters-list">
+                                                <div class="parameters-list__item">
+                                                    <dt class="parameters-list__term">Цвет</dt>
+                                                    <dd>Белый</dd>
+                                                </div>
+                                                <div class="parameters-list__item">
+                                                    <dt class="parameters-list__term">Размер</dt>
+                                                    <dd>56</dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+
+                                        <div class="item__wrapper">
+                                            <div class="item__item-controls item-controls">
+                                                <button class="item-controls__favorite">
+                                                    <svg>
+                                                        <use href="/assets/icons.svg#favoriteItem"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="item-controls__remove">
+                                                    <svg>
+                                                        <use href="/assets/icons.svg#removeItem"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="item__item-controls_mobile item-controls">
+                                            <button class="item-controls__favorite">
+                                                <svg>
+                                                    <use href="/assets/icons.svg#favoriteItem"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="item-controls__remove">
+                                                <svg>
+                                                    <use href="/assets/icons.svg#removeItem"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="item-list__item item">
+                                        <picture>
+                                            <source
+                                                srcset="
+                                                    /assets/images/img_2/img_2@1x.avif 1x,
+                                                    /assets/images/img_2/img_2@2x.avif 2x
+                                                "
+                                                type="image/avif"
+                                            />
+                                            <source
+                                                srcset="
+                                                    /assets/images/img_2/img_2@1x.webp 1x,
+                                                    /assets/images/img_2/img_2@2x.webp 2x
+                                                "
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                height="96px"
+                                                width="72px"
+                                                loading="lazy"
+                                                class="item__img item__img_missing"
+                                                src="/assets/images/img_2/img_2@1x.jpg"
+                                                srcset="/assets/images/img_2/img_2@2x.jpg 2x"
+                                                alt="Силиконовый чехол"
+                                            />
+                                        </picture>
+
+                                        <div class="item__description">
+                                            <span class="item__label"
+                                                >Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс
+                                                бампер на Apple iPhone XR, MobiSafe</span
+                                            >
+
+                                            <dl class="item__parameters-list parameters-list">
+                                                <div class="parameters-list__item">
+                                                    <dt class="parameters-list__term">Цвет</dt>
+                                                    <dd>прозрачный</dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+
+                                        <div class="item__wrapper">
+                                            <div class="item__item-controls item-controls">
+                                                <button class="item-controls__favorite">
+                                                    <svg>
+                                                        <use href="/assets/icons.svg#favoriteItem"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="item-controls__remove">
+                                                    <svg>
+                                                        <use href="/assets/icons.svg#removeItem"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="item__item-controls_mobile item-controls">
+                                            <button class="item-controls__favorite">
+                                                <svg>
+                                                    <use href="/assets/icons.svg#favoriteItem"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="item-controls__remove">
+                                                <svg>
+                                                    <use href="/assets/icons.svg#removeItem"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="item-list__item item">
+                                        <picture>
+                                            <source
+                                                srcset="
+                                                    /assets/images/img_3/img_3@1x.avif 1x,
+                                                    /assets/images/img_3/img_3@2x.avif 2x
+                                                "
+                                                type="image/avif"
+                                            />
+                                            <source
+                                                srcset="
+                                                    /assets/images/img_3/img_3@1x.webp 1x,
+                                                    /assets/images/img_3/img_3@2x.webp 2x
+                                                "
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                height="96px"
+                                                width="72px"
+                                                loading="lazy"
+                                                class="item__img item__img_missing"
+                                                src="/assets/images/img_3/img_3@1x.jpg"
+                                                srcset="/assets/images/img_3/img_3@2x.jpg 2x"
+                                                alt="Набор цветных карандашей"
+                                            />
+                                        </picture>
+
+                                        <div class="item__description">
+                                            <span class="item__label"
+                                                >Карандаши цветные Faber&#8209;Castell "Замок", набор 24 цвета,
+                                                заточенные, шестигранные, Faber&#8209;Castell
+                                            </span>
+
+                                            <dl
+                                                class="item__parameters-list parameters-list parameters-list_noMargin"
+                                            ></dl>
+                                        </div>
+
+                                        <div class="item__wrapper">
+                                            <div class="item__item-controls item-controls">
+                                                <button class="item-controls__favorite">
+                                                    <svg>
+                                                        <use href="/assets/icons.svg#favoriteItem"></use>
+                                                    </svg>
+                                                </button>
+                                                <button class="item-controls__remove">
+                                                    <svg>
+                                                        <use href="/assets/icons.svg#removeItem"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="item__item-controls_mobile item-controls">
+                                            <button class="item-controls__favorite">
+                                                <svg>
+                                                    <use href="/assets/icons.svg#favoriteItem"></use>
+                                                </svg>
+                                            </button>
+                                            <button class="item-controls__remove">
+                                                <svg>
+                                                    <use href="/assets/icons.svg#removeItem"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div id="delivery" class="basket__delivery delivery">
+                            <div class="delivery__heading-wrapper">
+                                <h2 class="delivery__heading h2">Способ доставки</h2>
+                                <button class="delivery__change-method-button h4 font-color_accent" data-changeDelivery>
+                                    Изменить
+                                </button>
+                            </div>
+
+                            <dl class="delivery__description-list delivery-description-list">
+                                <div class="delivery-description-list__item">
+                                    <dt class="delivery-description-list__term text_fw600" data-deliveryType>
+                                        Пункт выдачи
+                                    </dt>
+                                    <dd class="delivery-description-list__address-wrapper address-wrapper">
+                                        <span class="address-wrapper__address" data-deliveryAddress></span>
+                                        <div
+                                            class="address-wrapper__delivery-point-info text_caption"
+                                            data-deliveryPointInfo
+                                        ></div>
+                                    </dd>
+                                </div>
+
+                                <div class="delivery-description-list__item">
+                                    <dt class="delivery-description-list__term text_fw600">Стоимость доставки</dt>
+                                    <dd class="delivery-description-list__shipping-price">Бесплатно</dd>
+                                </div>
+
+                                <div class="delivery-description-list__item-wrapper" data-deliveryCargo></div>
+                            </dl>
+
+                            <div class="delivery__footer delivery-footer">
+                                <div class="price-shipping"></div>
+
+                                <div>
+                                    Обратная доставка товаров на склад при отказе — 
+                                    <span class="delivery-footer__free">бесплатно</span>
+                                    <div class="delivery-footer__hint caption">
+                                        Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="payment" class="basket__payment payment">
+                            <div class="payment__heading-wrapper">
+                                <h2 class="payment__heading h2">Способ оплаты</h2>
+                                <button class="payment__change-method-button h4 font-color_accent" data-changePayment>
+                                    Изменить
+                                </button>
+                            </div>
+                            <div class="payment__card-data-wrapper card-data">
+                                <div class="card-data__icon card card__mir" data-cardIcon></div>
+                                <span class="card-data__number" data-cardNumber></span>
+                                <span class="card-data__date">01/30</span>
+                            </div>
+
+                            <span class="payment__payment-hint text_caption font-color_gray" data-hint
+                                >Спишем оплату с карты при получении</span
+                            >
+                        </div>
+
+                        <div class="basket__recipient recipient">
+                            <h2 class="recipient__heading h2">Получатель</h2>
+                            <form id="recipientForm" action="" class="recipient__form recipient-form">
+                                <div class="recipient-form__row-wrapper">
+                                    <div class="recipient-form__field-wrapper form-field">
+                                        <input
+                                            id="name"
+                                            type="text"
+                                            class="form-field__input"
+                                            placeholder="Укажите имя"
+                                            data-isEmpty="true"
+                                        />
+                                        <label for="name" class="form-field__label">Имя</label>
+                                        <span class="form-field__error-msg">Укажите имя</span>
+                                    </div>
+                                    <div class="recipient-form__field-wrapper form-field">
+                                        <input
+                                            id="surname"
+                                            type="text"
+                                            class="form-field__input"
+                                            placeholder="Укажите фамилию"
+                                            data-isEmpty="true"
+                                        />
+                                        <label for="surname" class="form-field__label">Фамилия</label>
+                                        <span class="form-field__error-msg">Укажите фамилию</span>
+                                    </div>
+                                </div>
+                                <div class="recipient-form__row-wrapper">
+                                    <div class="recipient-form__field-wrapper form-field">
+                                        <input
+                                            id="email"
+                                            type="email"
+                                            class="form-field__input"
+                                            placeholder="Укажите почту"
+                                            data-isEmpty="true"
+                                            data-email
+                                        />
+                                        <label for="email" class="form-field__label">Почта</label>
+                                        <span class="form-field__error-msg">Укажите почту</span>
+                                    </div>
+                                    <div class="recipient-form__field-wrapper form-field">
+                                        <input
+                                            id="phone"
+                                            type="tel"
+                                            class="form-field__input"
+                                            placeholder="Укажите телефон"
+                                            data-isEmpty="true"
+                                            data-tel
+                                        />
+                                        <label for="phone" class="form-field__label">Телефон</label>
+                                        <span class="form-field__error-msg">Укажите телефон</span>
+                                    </div>
+                                    <div class="recipient-form__field-wrapper form-field">
+                                        <input
+                                            id="inn"
+                                            type="tel"
+                                            autocomplete="off"
+                                            class="form-field__input"
+                                            data-isEmpty="true"
+                                            data-inn
+                                        />
+                                        <label for="inn" class="form-field__label">ИНН</label>
+                                        <span class="form-filed__hint">Для таможенного оформления</span>
+                                        <span class="form-field__error-msg">Укажите ИНН</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+
+                    <section id="summary" class="summary">
+                        <dl class="summary__price-details-list price-details-list">
+                            <div class="price-details-list__item">
+                                <dt><h2 class="h2">Итого</h2></dt>
+                                <dd><span class="h2" data-totalPrice>0</span><span class="h3">&nbsp;сом</span></dd>
+                            </div>
+                            <div class="price-details-list__item">
+                                <dt data-itemsAmount>4 товара</dt>
+                                <dd data-oldPrice><span>2 302 048</span><span>&nbsp;сом</span></dd>
+                            </div>
+                            <div class="price-details-list__item">
+                                <dt>Скидка</dt>
+                                <dd data-discount><span>−200 985</span><span>&nbsp;сом</span></dd>
+                            </div>
+                            <div class="price-details-list__item">
+                                <dt>Доставка</dt>
+                                <dd>Бесплатно</dd>
+                            </div>
+                        </dl>
+
+                        <div class="summary__delivery summary-delivery">
+                            <div class="summary-delivery__header">
+                                <h4 class="summary-delivery__heading h4" data-deliveryType>Доставка в пункт выдачи</h4>
+
+                                <button class="summary-delivery__change-button" data-changeDelivery>
+                                    <svg class="">
+                                        <use href="/assets/icons.svg#pencil"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <span class="summary-delivery__address" data-deliveryAddress> </span>
+
+                            <span class="summary-delivery__delivery-date">5–8 фев</span>
+
+                            <div class="summary-delivery__return-hint">
+                                <div class="summary-delivery__icon price-shipping"></div>
+                                <div>
+                                    <span>Обратная доставка товаров на склад при отказе — </span
+                                    ><span class="summary-delivery__free-word">бесплатно</span>
+                                    <div class="summary-delivery__hint caption">
+                                        Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="summary__payment summary-payment">
+                            <div class="summary-payment__header">
+                                <h4 class="summary-payment__heading h4">Оплата картой</h4>
+
+                                <button class="summary-payment__change-button" data-changePayment>
+                                    <svg class="">
+                                        <use href="/assets/icons.svg#pencil"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="summary-payment__card-wrapper">
+                                <div class="card card__mir" data-cardIcon></div>
+                                <span class="summary-payment__card-number" data-cardNumber></span>
+                            </div>
+
+                            <div class="summary-payment__immediately-payment-wrapper immediately-payment-wrapper">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input" data-immediatelyPayment />Списать
+                                    оплату сразу
+                                    <span class="checkbox__icon"></span>
+                                </label>
+
+                                <span class="immediately-payment-wrapper__hint" data-hint
+                                    >Спишем оплату с карты при получении</span
+                                >
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="summary__confrim-button h4" data-submitButton>Заказать</button>
+
+                            <div class="summary__agreements-wrapper agreements-wrapper">
+                                <div class="agreements-wrapper__icon agreement"></div>
+
+                                <div>
+                                    Соглашаюсь <a href="">с правилами пользования торговой площадкой</a> и&nbsp;<a
+                                        href=""
+                                        >возврата</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer class="footer text_caption">
+                <div class="container"><p>&copy; 2022 ООО «Товары и точка»</p></div>
+            </footer>
+
+            <dialog id="paymentModal" class="modal payment-method">
+                <div class="modal__header">
+                    <h3 class="modal__heading h3">Способы оплаты</h3>
+                    <button class="modal__close" data-modalCloseButton>
+                        <svg class="">
+                            <use href="/assets/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="modal__body">
+                    <form action="" id="paymentCard">
+                        <ul class="payment-method__list payment-method-list" data-cardList></ul>
+                    </form>
+                </div>
+                <div class="modal__footer">
+                    <button class="modal__submitButton h4" type="submit" form="paymentCard">Выбрать</button>
+                </div>
+            </dialog>
+
+            <dialog id="deliveryModal" class="modal delivery-method">
+                <div class="modal__header">
+                    <h3 class="modal__heading h3" data-heading>Способ доставки</h3>
+                    <button class="modal__close" data-modalCloseButton>
+                        <svg class="">
+                            <use href="/assets/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="modal__tabs-wrapper">
+                    <ul class="modal__tabs-list tabs-list" data-typeList>
+                        <li class="tabs-list__item">
+                            <button
+                                class="tabs-list__button tabs-list__button_active caption caption_fw700"
+                                data-type="deliveryPoint"
+                            >
+                                В пункт выдачи
+                            </button>
+                        </li>
+                        <li class="tabs-list__item">
+                            <button class="tabs-list__button caption caption_fw700" data-type="courier">
+                                Курьером
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="modal__body">
+                    <h4 class="caption caption_fw700">Мои адреса</h4>
+                    <form action="" id="address" class="delivery-method__form" data-deliveryPointForm>
+                        <ul class="delivery-method__list delivery-method-list" data-addressList></ul>
+                    </form>
+                    <form
+                        action=""
+                        id="address"
+                        class="delivery-method__form delivery-method__form_hidden"
+                        data-courierForm
+                    >
+                        <ul class="delivery-method__list delivery-method-list" data-addressList></ul>
+                    </form>
+                </div>
+                <div class="modal__footer">
+                    <button class="modal__submitButton h4" type="submit" form="address">Выбрать</button>
+                </div>
+            </dialog>
+        </div>
+
+        <script type="module" src="js/main.js"></script>
+    </body>
+</html>

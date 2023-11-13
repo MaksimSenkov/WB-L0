@@ -1,0 +1,35 @@
+:root {
+    /* #region colors */
+    --black: #000000;
+    --gray: #9797af;
+    --light-gray: #a0a0a4;
+    --footer-gray: rgba(255, 255, 255, 0.7);
+    --accent: #cb11ab;
+    --light-accent: rgba(203, 17, 171, 0.15);
+    --accent-border-dashed: rgba(203, 17, 171, 0.2);
+    --orange: #f55123;
+
+    --green: #0cb477;
+    --green-border-dashed: rgba(12, 180, 119, 0.2);
+
+    /* #endregion*/
+
+    --bg-color-violet: #6725a8;
+    --bg-color-main: #f6f6fa;
+
+    --rulers: rgba(0, 0, 0, 0.1);
+    --rulers-input: rgba(0, 0, 0, 0.2);
+    --form-rulers: rgba(0, 0, 0, 0.2);
+
+    --summary-bg-color: #ffffff;
+
+    --background-color-smoky: #f6f6fa;
+    --background-color-smoky-dark: #f0ecf4;
+
+    /* Font */
+    --font-default-color: var(--black);
+
+    /* Shadows */
+
+    --drop-list: 0px 0px 1px 0px rgba(0, 0, 0, 0.3), 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
