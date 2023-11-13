@@ -61,7 +61,6 @@ export default class AddressesSlice extends Slice {
         const state = super.getState();
 
         const address = state[state.currentDeliveryType].find((element) => element.id === +state.currentAddress);
-        console.log(+state.currentAddress);
 
         return {
             deliveryType: state.currentDeliveryType,
