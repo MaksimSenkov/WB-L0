@@ -225,15 +225,15 @@ export default class Accordion {
                 <picture>
                     <source
                         srcset="
-                            /assets/images/${image}/${image}@1x.avif 1x,
-                            /assets/images/${image}/${image}1@2x.avif 2x
+                            ./assets/images/${image}/${image}@1x.avif 1x,
+                            ./assets/images/${image}/${image}1@2x.avif 2x
                         "
                         type="image/avif"
                     />
                     <source
                         srcset="
-                            /assets/images/${image}/${image}@1x.webp 1x,
-                            /assets/images/${image}/${image}@2x.webp 2x
+                            ./assets/images/${image}/${image}@1x.webp 1x,
+                            ./assets/images/${image}/${image}@2x.webp 2x
                         "
                         type="image/webp"
                     />
@@ -242,8 +242,8 @@ export default class Accordion {
                         width="72px"
                         loading="lazy"
                         class="item__img"
-                        src="/assets/images/${image}/${image}@1x.jpg"
-                        srcset="/assets/images/${image}/${image}@2x.jpg 2x"
+                        src="./assets/images/${image}/${image}@1x.jpg"
+                        srcset="./assets/images/${image}/${image}@2x.jpg 2x"
                         alt="${label}"
                     />
                 </picture>
