@@ -1,12 +1,12 @@
-@import url("/css/services/normalize.css");
+@import url("../css/services/normalize.css");
 
-@import url("/css/variables.css");
-@import url("/css/typography/typography.css");
+@import url("../css/variables.css");
+@import url("../css/typography/typography.css");
 
-@import url("/css/services/services.css");
+@import url("../css/services/services.css");
 
-@import url("/css/assets/icons.css");
-@import url("/css/assets/cardIcon.css");
+@import url("../css/assets/icons.css");
+@import url("../css/assets/cardIcon.css");
 
 @import url("./page/page.css");
 @import url("./page/elements/header/header.css");
