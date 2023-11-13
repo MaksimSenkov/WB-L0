@@ -150,15 +150,15 @@ export default class Delivery {
                 <picture>
                     <source
                         srcset="
-                            /project/assets/images/${image}/${image}@1x.avif 1x,
-                            /project/assets/images/${image}/${image}@2x.avif 2x
+                            ./assets/images/${image}/${image}@1x.avif 1x,
+                            ./assets/images/${image}/${image}@2x.avif 2x
                         "
                         type="image/avif"
                     />
                     <source
                         srcset="
-                            /project/assets/images/${image}/${image}@1x.webp 1x,
-                            /project/assets/images/${image}/${image}@2x.webp 2x
+                            ./assets/images/${image}/${image}@1x.webp 1x,
+                            ./assets/images/${image}/${image}@2x.webp 2x
                         "
                         type="image/webp"
                     />
@@ -166,8 +166,8 @@ export default class Delivery {
                         height="56px"
                         width="40px"
                         loading="lazy"
-                        src="/project/assets/images/${image}/${image}@1x.jpg"
-                        srcset="/project/assets/images/${image}/${image}@2x.jpg 2x"
+                        src="./assets/images/${image}/${image}@1x.jpg"
+                        srcset="./assets/images/${image}/${image}@2x.jpg 2x"
                         alt="${label}"
                     />
                 </picture>
