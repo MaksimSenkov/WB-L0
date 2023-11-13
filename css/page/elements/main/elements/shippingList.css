@@ -28,7 +28,7 @@
 .checkbox__input:checked + .checkbox__icon {
     border: none;
 
-    background-image: url("/assets/checkbox.svg");
+    background-image: url("../../../../../assets/checkbox.svg");
 }
 
 .radio {
@@ -58,13 +58,13 @@
     appearance: none;
 }
 .radio__input + .radio__icon {
-    background-image: url("/assets/radio-unchecked.svg");
+    background-image: url("../../../../../assets/radio-unchecked.svg");
 }
 
 .radio__input:checked + .radio__icon {
     border: none;
 
-    background-image: url("/assets/radio.svg");
+    background-image: url("../../../../../assets/radio.svg");
 }
 /*  */
 
