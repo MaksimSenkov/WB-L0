@@ -401,6 +401,7 @@ dt {
 
 .item__price-wrapper {
     position: relative;
+    width: fit-content;
 }
 .item__current-price-container {
     overflow: hidden;
