@@ -406,8 +406,6 @@ dt {
     overflow: hidden;
 }
 
-@media (300px <= width) and (width <= 1000px) {
-}
 .price-container {
     font-size: 20px;
     font-style: normal;
@@ -471,7 +469,7 @@ dt {
 .discounts-list__def {
 }
 
-@media (300px <= width) and (width <= 1000px) {
+@media (width <= 1000px) {
     .accordion__item {
         margin-bottom: 48px;
     }
