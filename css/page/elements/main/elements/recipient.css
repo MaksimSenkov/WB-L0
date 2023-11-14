@@ -171,7 +171,7 @@
     -moz-appearance: textfield;
 }
 
-@media (320px <= width) and (width <= 1000px) {
+@media (width <= 1000px) {
     .recipient {
         padding: 16px 16px 24px;
     }
@@ -197,18 +197,5 @@
         width: 100%;
         margin-bottom: 18px;
     }
-
-    .recipient-form__row-wrapper:last-child .form-field:last-child {
-        /* margin-bottom: unset; */
-    }
-}
-/* .recipient-form__row-wrapper {
-    display: flex;
-    gap: 24px;
-
-    margin-bottom: 19px;
 }
 
-.recipient-form__row-wrapper .form-field {
-    flex-grow: 1;
-} */
