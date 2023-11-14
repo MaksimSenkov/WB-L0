@@ -10,6 +10,7 @@
 
 @import url("./page/page.css");
 @import url("./page/elements/header/header.css");
+@import url("./page/elements/mobile/mobileNavBar.css");
 @import url("./page/elements/main/main.css");
 @import url("./page/elements/main/elements/bundle.css");
 @import url("./page/elements/footer/footer.css");
