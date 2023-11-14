@@ -58,8 +58,6 @@
     color: white;
 }
 
-/* Вынести сверху */
-
 .payment-method {
     width: 400px;
     min-height: 408px;
@@ -190,7 +188,7 @@
     margin-left: 8px;
 }
 
-@media (320px <= width) and (width <= 1000px) {
+@media (width <= 1000px) {
     .modal[open] {
         margin: unset;
 
