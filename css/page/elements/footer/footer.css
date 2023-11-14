@@ -6,3 +6,22 @@
 
     color: var(--footer-gray);
 }
+
+.footer__mobile-nav-space {
+    display: none;
+}
+
+@media (width<=1000px) {
+    .footer .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 56px;
+        justify-items: center;
+        color: var(--footer-gray);
+    }
+
+    .footer__mobile-nav-space {
+        display: block;
+    }
+}
