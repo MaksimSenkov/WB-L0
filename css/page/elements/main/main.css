@@ -31,7 +31,7 @@
     margin-bottom: 16px;
 }
 
-@media (320px <= width) and (width <= 1000px) {
+@media (width <= 1000px) {
     .main {
         flex-grow: 1;
 
