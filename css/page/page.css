@@ -22,3 +22,9 @@
 .body__overflow_hidden {
     overflow: hidden;
 }
+
+@media (width <= 1000px) {
+    .footer {
+        height: 120px;
+    }
+}
