@@ -11,6 +11,25 @@
     </head>
     <body id="root" class="body">
         <div class="wrapper text">
+             <nav class="mobile__navigation navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="mobile__home"></a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="moblie__search"></a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="mobile__basket"></a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="moblie__favorite"></a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="mobile__person"></a>
+                    </li>
+                </ul>
+            </nav>
             <header class="header">
                 <div class="container">
                     <button class="header__burger-button burger-button">
@@ -522,7 +541,10 @@
                 </div>
             </main>
             <footer class="footer text_caption">
-                <div class="container"><p>&copy; 2022 ООО «Товары и точка»</p></div>
+                <div class="container">
+                     <p>&copy; 2022 ООО «Товары и точка»</p>
+                    <div class="footer__mobile-nav-space"></div>
+                </div>
             </footer>
 
             <dialog id="paymentModal" class="modal payment-method">
