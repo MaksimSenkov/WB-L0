@@ -305,12 +305,12 @@ export default class Accordion {
                 <div class="item__item-controls item-controls">
                     <button class="item-controls__favorite">
                         <svg>
-                            <use href="/assets/icons.svg#favoriteItem"></use>
+                            <use href="./assets/icons.svg#favoriteItem"></use>
                         </svg>
                     </button>
                     <button class="item-controls__remove">
                         <svg>
-                            <use href="/assets/icons.svg#removeItem"></use>
+                            <use href="./assets/icons.svg#removeItem"></use>
                         </svg>
                     </button>
                 </div>
