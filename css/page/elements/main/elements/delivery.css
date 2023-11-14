@@ -163,7 +163,7 @@
     display: block;
 }
 
-@media (320px <= width) and (width <= 1000px) {
+@media (width <= 1000px) {
     .delivery {
         padding: 16px 16px 24px;
     }
