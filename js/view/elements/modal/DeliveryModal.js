@@ -141,7 +141,7 @@ export default class DeliveryModal {
                 </label>
                 <button>
                     <svg>
-                        <use href="/assets/icons.svg#removeItemGray"></use>
+                        <use href="./assets/icons.svg#removeItemGray"></use>
                     </svg>
                 </button>
             </li>
