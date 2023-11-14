@@ -1,1 +1,35 @@
+.mobile__navigation {
+    display: none;
+}
 
+@media (width<=1000px) {
+    .mobile__navigation {
+        display: block;
+    }
+
+    .navigation {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        height: 56px;
+        padding: 0 13px;
+
+        background-color: #fff;
+        z-index: 1000;
+    }
+
+    .navigation__list {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
