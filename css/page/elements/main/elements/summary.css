@@ -218,7 +218,7 @@
     transform: translateY(4px);
 }
 
-@media (320px <= width) and (width <= 1000px) {
+@media (width <= 1000px) {
     .summary {
         position: unset;
         top: unset;
